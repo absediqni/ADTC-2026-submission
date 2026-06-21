@@ -1,6 +1,6 @@
 #Connect Local LLM
 import ollama
-
+import time
 #System prompt
 SYSTEM_PROMPT = """
 You are OpsMind AI.
@@ -39,6 +39,8 @@ def ask_llm(
 
     Provide a concise operational answer.
     """
+    # Track response time
+    start = time.time()
     response = ollama.chat(
         model="qwen2.5:3b",
         messages=[
@@ -52,5 +54,7 @@ def ask_llm(
             }
         ]
     )
-
-    return response.message.content
+    elapsed = time.time() - start
+    print(f"LLM responded in {elapsed:.2f}s")
+    
+    return response.message.content or ""
