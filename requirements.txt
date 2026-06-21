@@ -1,0 +1,10 @@
+streamlit
+ollama
+langchain-core
+langchain-text-splitters
+langchain-community
+faiss-cpu
+sentence-transformers
+torch
+torchvision
+pypdf

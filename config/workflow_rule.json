@@ -1,0 +1,29 @@
+{
+    "Fund Requests": {
+        "steps": [
+            "Department Haad",
+            "Fianance Manager",
+            "CEO"
+        ]
+    },
+    "Procurment Requests": {
+        "steps": [
+            "Department Haad",
+            "Procument Officer",
+            "Fianance Manager"
+        ]
+    },
+    "Leave Requests": {
+        "steps": [
+            "Supervisor",
+            "HR"
+        ]
+    },
+    "Travel Requests": {
+        "steps": [
+            "Supervisor",
+            "Fianance",
+            "Admin"
+        ]
+    }
+}
